@@ -45,7 +45,7 @@ finalCross.addEventListener("click", function () {
 const finalBtn = document.querySelector("#btn_final");
 finalBtn.addEventListener("click", function () {
 	finalPopup.classList.add("none");
-	location.href = "./../index.html";
+	location.href = "./index.html";
 });
 
 const shemaItemLink = document.querySelector(".shema_item_link");
