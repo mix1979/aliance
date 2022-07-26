@@ -43,7 +43,8 @@ finalCross.addEventListener("click", function () {
 });
 
 const finalBtn = document.querySelector("#btn_final");
-finalBtn.addEventListener("click", function () {
+finalBtn.addEventListener("click", function (e) {
+	e.preventDefault();
 	finalPopup.classList.add("none");
 });
 
