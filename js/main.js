@@ -21,7 +21,8 @@ document.addEventListener("click", function (e) {
 
 const popup = document.querySelector(".popup_menu");
 const consult = document.querySelector(".header_btn");
-consult.addEventListener("click", function () {
+consult.addEventListener("click", function (e) {
+	e.preventDefault();
 	popup.classList.remove("none");
 });
 
