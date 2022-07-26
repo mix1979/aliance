@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        >
+        <link rel="icon" href="./../img/icon.png">
+        <link rel="stylesheet" href="./../css/main.css">
+        <link rel="stylesheet" href="./../css/pages.css">
+        <title>Автохимия</title>
+    </head>
+    <body>
+        <div class="header_nav">
+            <div class="logo">
+                <img src="./../img/logo.png" alt="...">
+            </div>
+            <div class="menu">
+                <ul class="main_menu pages_menu">
+                    <a href="./about.html">
+                        <li class="menu_item">О компании</li>
+                    </a>
+                    <a href="./contract.html" id="contracts_link">
+                        <li class="menu_item">Контрактное произвоство</li>
+                    </a>
+                    <a href="#ownMarks">
+                        <li class="menu_item">Собственные торговые марки</li>
+                    </a>
+                    <a href="#">
+                        <li class="menu_item">Новости</li>
+                    </a>
+                    <a href="#footer">
+                        <li class="menu_item">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="phone_button_block">
+                <p class="phone pages_phone">
+                    <img src="./../img/phone.png" alt="...">
+                    +7(499)686-10-14
+                </p>
+                <button class="btn btn-primary header_btn">Получить консультацию</button>
+            </div>
+        </div>
+        <div class="autohimical_main">
+            <div class="dropdown_menu pages_dropdown_menu none">
+                <ul class="dropdown">
+                    <a href="#">
+                        <li class="dropdown_item">Автомобильная химия</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown_item">Бытовая химия</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown_item">Дезинфицирующие средства</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown_item">Пищевые аэрозоли</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown_item">Косметическая продукция</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown_item">Краски аэрозольные</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="popup_menu none">
+                <div class="popup_menu_holder">
+                    <div class="popup_title_block">
+                        <div class="popup_title">Есть вопросы?</div>
+                        <div class="popup_cross">
+                            <img src="./../img/blog/cross.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="popup_main">
+                        <p>Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+                        <form class="popup_form">
+                            <input type="text" placeholder="Имя" id="name">
+                            <input type="phone" placeholder="+7(95_)___-__-__" id="phone">
+                            <button type="submit" class="btn btn-primary order_btn" id="btn">Отправить заявку</button>
+                        </form>
+                        <div class="popup_footer d-flex justify-content-between align-items-start">
+                            <img src="./../img/blog/popup_footer.png" alt="...">
+                            <p class="popup_footer_text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_final popup_menu none">
+                <div class="popup_menu_holder">
+                    <div class="img_block">
+                        <img src="./../img/blog/thanks_illu.png" alt="...">
+                        <div class="popup_cross final_cross">
+                            <img src="./../img/blog/cross.png" alt="...">
+                        </div>
+                    </div>
+                    <p class="popup_title final_title">Спасибо за заявку!</p>
+                    <p class="popup_text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+                    <button class="btn btn-primary order_btn" id="btn_final">Вернуться на главную</button>
+                </div>
+            </div>
+            <div class="heading_block him_block d-flex justify-content-between align-items-center">
+                <div class="heading_leftside_bar">
+                    <div class="line"></div>
+                    <h1 class="main_contract_title">Автомобильная химия</h1>
+                    <p class="pages_linkTitle">
+                        <a href="./../index.html">Главная</a>
+                        <a href="./contract.html">- Контрактное производство</a>
+                        - Автомобильная химия
+                    </p>
+                </div>
+                <div class="heading_rightside_bar">
+                    <img src="./../img/avto-him.png" alt="...">
+                </div>
+            </div>
+            <div class="him_producing_block  d-flex justify-content-between align-items-center">
+                <div class="him_producing_block_img">
+                    <img src="./../img/autohimlists/pexels-tima-miroshnichenko-9574410 2.png" alt="">
+                </div>
+                <div class="him_producing_block_content">
+                    <div class="line producing_line"></div>
+                    <h2 class="block_title producing_title">Контрактное производство автомобильной химии</h2>
+                    <p class="him_producing_text">
+                        Прежде всего, начало повседневной работы по формированию позиции однозначно фиксирует необходимость приоритизации разума над эмоциями. Кстати, представители современных социальных резервов неоднозначны и будут описаны максимально подробно.
+                    </p>
+                    <p class="him_producing_text">
+                        Но социально-экономическое развитие напрямую зависит от поставленных обществом задач! Безусловно, постоянный количественный рост и сфера нашей активности предоставляет широкие возможности для системы обучения кадров, соответствующей насущным потребностям. В целом, конечно, выбранный нами инновационный путь обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи. А ещё элементы политического процесса представлены в исключительно положительном свете. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада создаёт предпосылки для глубокомысленных рассуждений. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.
+                    </p>
+                </div>
+            </div>
+            <div class="header_footer_card_holder">
+                <div class="card_holder_item him_card">
+                    <img src="./../img/header_footer1.png" alt="...">
+                    <p class="card_footer_item_text him_item_text">Непрерывная работа c 2017 года</p>
+                </div>
+                <div class="card_holder_item him_card">
+                    <img src="./../img/header_footer2.png" alt="...">
+                    <p class="card_footer_item_text him_item_text">Вся продукция сертифицирована</p>
+                </div>
+                <div class="card_holder_item him_card">
+                    <img src="./../img/header_footer3.png" alt="...">
+                    <p class="card_footer_item_text him_item_text">Контроль качества на всех этапах</p>
+                </div>
+                <div class="card_holder_item him_card">
+                    <img src="./../img/header_footer4.png" alt="...">
+                    <p class="card_footer_item_text him_item_text">Возможны поставки по всей России</p>
+                </div>
+                <div class="card_holder_item him_card">
+                    <img src="./../img/header_footer5.png" alt="...">
+                    <p class="card_footer_item_text him_item_text">Оперативное производство</p>
+                </div>
+            </div>
+            <div class="auto_him_development d-flex justify-content-between align-items-center">
+                <div class="auto_him_development_content_block ">
+                    <div class="line"></div>
+                    <h2 class="block_title him_development_title">Изготовление автохимии</h2>
+                    <p class="auto_him_development_text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.</p>
+                    <div class="auto_him_list_block d-flex justify-content-between">
+                        <ul class="auto_him_left_list">
+                            <li>
+                                <img src="./../img/autohimlists/1.png" alt="...">
+                                Полное описание товаров
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/2.png" alt="...">
+                                Актуальные цены
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/1.png" alt="...">
+                                Полное описание товаров
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/2.png" alt="...">
+                                Актуальные цены
+                            </li>
+                        </ul>
+                        <ul class="auto_him_right_list">
+                            <li>
+                                <img src="./../img/autohimlists/3.png" alt="...">
+                                Лаки и краски
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/1.png" alt="...">
+                                Химические производства
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/3.png" alt="...">
+                                Лаки и краски
+                            </li>
+                            <li>
+                                <img src="./../img/autohimlists/1.png" alt="...">
+                                Химические производства
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="auto_him_development_img_block">
+                    <img src="./../img/autohimlists/pexels-mikhail-nilov-8851545 1.png" alt="...">
+                </div>
+            </div>
+            <div class="auto_him_types">
+                <div class="line"></div>
+                <h2 class="block_title">Виды автохимии</h2>
+                <p class="him_producing_text auto_him_types_text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
+                <div class="auto_him_types_lists">
+                    <div class="auto_him_types_lists_item">
+                        <ul>
+                            <li>Антискотч</li>
+                            <li>Многоцелевая смазка</li>
+                            <li>Жидкий ключ</li>
+                            <li>Высокотемпературная смазка</li>
+                            <li>Универсальный очиститель деталей</li>
+                        </ul>
+                    </div>
+                    <div class="auto_him_types_lists_item">
+                        <ul>
+                            <li>Силиконовая смазка</li>
+                            <li>Цепная смазка</li>
+                            <li>Медная смазка</li>
+                            <li>Графитовая смазка</li>
+                            <li>Очиститель кондиционера пенный</li>
+                        </ul>
+                    </div>
+                    <div class="auto_him_types_lists_item">
+                        <ul>
+                            <li>Очиститель тормозных дисков</li>
+                            <li>
+                                Очиститель битумных пятен
+                            </li>
+                            <li>
+                                Очиститель кондционера
+                            </li>
+                            <li>
+                                Очиститель дросельной заслонки
+                            </li>
+                            <li>
+                                Очиститель обивки
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="auto_him_types_lists_item">
+                        <ul>
+                            <li>Тефлоновая смазка</li>
+                            <li>
+                                Очиститель двигателя
+                            </li>
+                            <li>
+                                Универсальный очиститель
+                            </li>
+                            <li>
+                                Чернитель шин
+                            </li>
+                            <li>
+                                Чернитель шин + очистка
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="line"></div>
+                <div class="block_title">Исследовательский центр Aliance production</div>
+                <div class="center_content_block">
+                    <div class="center_content_left">
+                        <p>Явные признаки победы институционализации рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. Лишь акционеры крупнейших компаний могут быть призваны к ответу.</p>
+                    </div>
+                    <div class="center_content_right">
+                        <p>С учётом сложившейся международной обстановки, синтетическое тестирование требует определения и уточнения анализа существующих паттернов поведения. Не следует, однако, забывать, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carusel_block d-flex flex-column">
+                <div class="items d-flex justify-content-between align-items-center">
+                    <div class="carusel_item">
+                        <img src="./../img/carusel/1.png" alt="...">
+                    </div>
+                    <div class="carusel_item">
+                        <img src="./../img/carusel/2.png" alt="">
+                    </div>
+                    <div class="carusel_item">
+                        <img src="./../img/carusel/2.png" alt="">
+                    </div>
+                    <div class="carusel_item">
+                        <img src="./../img/carusel/1.png" alt="">
+                    </div>
+                </div>
+                <div class="button_block carusel_btn_block align-self-end">
+                    <div class="left_button">
+                        <img src="./../img/leftArrow.png" alt="...">
+                    </div>
+                    <div class="right_button">
+                        <div class="right_button">
+                            <img src="./../img/rightArrow.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shema">
+                <div class="line"></div>
+                <h2 class="block_title shema_title">схема работы</h2>
+                <div class="shema_card_holder">
+                    <div class="shema_item">
+                        <div class="number">01</div>
+                        <h5 class="shema_item_title">Знакомство</h5>
+                        <p class="shema_item_text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                        <a href="#" class="shema_item_link">Оставить заявку</a>
+                    </div>
+                    <div class="shema_item">
+                        <div class="number">02</div>
+                        <h5 class="shema_item_title">Заключение договора</h5>
+                        <p class="shema_item_text">Лишь интерактивные прототипы призваны к ответу.</p>
+                    </div>
+                    <div class="shema_item">
+                        <div class="number">03</div>
+                        <h5 class="shema_item_title">Производство</h5>
+                        <p class="shema_item_text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+                    </div>
+                    <div class="shema_item">
+                        <div class="number">04</div>
+                        <h5 class="shema_item_title">Доставка</h5>
+                        <p class="shema_item_text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над эмоциями.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="production_block about_production_block">
+                <div class="production_content_holder">
+                    <div class="production_left_block">
+                        <div class="line"></div>
+                        <h2 class="block_title production_title">Производим аэрозольную продукцию для разных сфер</h2>
+                        <div class="list_block">
+                            <ul class="left_list">
+                                <li class="left_list_item" id="l1">Химические производства</li>
+                                <li class="left_list_item" id="l2">Автомойки</li>
+                                <li class="left_list_item" id="l3">Пищевая продукция</li>
+                                <li class="left_list_item" id="l4">Лаки и краски</li>
+                                <li class="left_list_item" id="l5">Косметические средства</li>
+                            </ul>
+                            <ul class="right_list">
+                                <li class="rigth_list_item" id="r1">Автомобильная косметика</li>
+                                <li class="rigth_list_item" id="r2">Косметика по уходу за одеждой</li>
+                                <li class="rigth_list_item" id="r3">Косметика по уходу за обувью</li>
+                                <li class="rigth_list_item" id="r4">Строительные материалы</li>
+                                <li class="rigth_list_item" id="r5">И многих других</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="production_right_block">
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                        <div class="right_block_item">
+                            <img src="./../img/burger.png" alt="..." class="right_item_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="callback_block" id="callback">
+                <div class="callback_img_block">
+                    <img src="./../img/callback_img.png" alt="..." class="callback_img">
+                </div>
+                <div class="callback_form_block about_callback_form">
+                    <h2 class="block_title">Хотите сотрудничать?</h2>
+                    <p class="callback_subtitle">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+                    <form action="#" class="callback_form">
+                        <div class="form_input_block">
+                            <input
+                                type="text"
+                                placeholder="Имя"
+                                required
+                                id="name"
+                            >
+                            <input
+                                type="phone"
+                                placeholder="+_(___)___-__-__"
+                                required
+                                id="phone"
+                            >
+                        </div>
+                        <div class="form_button_block">
+                            <button class="btn btn-primary header_btn callback_btn">Отправить заявку</button>
+                            <label for="check">
+                                <input type="checkbox" id="check">
+                                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="footer_super_block">
+                <div class="footer_logo">
+                    <img src="./../img/logo.png" alt="..." class="footer_logo_img">
+                </div>
+                <div class="footer_super_phone_block">+7 (499) 686-10-14</div>
+                <div class="footer_super_address_block">
+                    <img src="./../img/Point.png" alt="...">
+                    г. Москва, Холодильный пер. 4к1с8
+                </div>
+                <div class="footer_mail_block">
+                    <img src="./../img/mail.png" alt="...">
+                    <a href="mailto:a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
+                </div>
+                <div class="footer_social">
+                    <a href="#">
+                        <img src="./../img/VK.png" alt="..." id="first_social_img">
+                    </a>
+                    <a href="#">
+                        <img src="./../img/Insta.png" alt="...">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_middle_block">
+                <div class="footer_middle_contracts">
+                    <h5 class="contracts_title middle_title">Контрактное производство</h5>
+                    <div class="contracts_list_block">
+                        <div class="contracts_left_list">
+                            <ul>
+                                <a href="#">
+                                    <li>Автомобильная химия</li>
+                                </a>
+                                <a href="#">
+                                    <li>Бытовая химия</li>
+                                </a>
+                                <a href="#">
+                                    <li>Дезинфицирующие средства</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="contracts_right_list">
+                            <a href="">
+                                <li>Пищевые аэрозоли</li>
+                            </a>
+                            <a href="">
+                                <li>Косметическая продукция</li>
+                            </a>
+                            <a href="">
+                                <li>Краски аэрозольные</li>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_middle_marks">
+                    <h5 class="middle_marks middle_title">Собственные марки</h5>
+                    <ul>
+                        <a href="#">
+                            <li>Автохимия AG-Tech</li>
+                        </a>
+                        <a href="#">
+                            <li>Автохимия AP</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer_middle_about">
+                    <a href="./pages/about.html">
+                        <h5 class="middle_title about_title">О компании</h5>
+                    </a>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <h5 class="middle_title">Новости</h5>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <h5 class="middle_title">Контакты</h5>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom_block">
+                <p class="copyright">&copy;2022 «Aliance Production». Все права защищены.</p>
+                <a href="#" class="politic">Политика конфиденциальности</a>
+                <p class="bottom_name">
+                    Сделано в
+                    <span>RUSO</span>
+                </p>
+            </div>
+        </footer>
+        <script src="./../js/main.js"></script>
+        <script src="./../js/pages.js"></script>
+    </body>
+</html>
