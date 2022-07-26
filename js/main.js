@@ -1,12 +1,12 @@
 const productionImage = document.querySelectorAll(".right_item_img");
 productionImage.forEach((elem) => {
 	elem.addEventListener("mouseover", function (e) {
-		e.target.setAttribute("src", "./img/Burger_color.png");
+		e.target.setAttribute("src", "./../img/Burger_color.png");
 	});
 });
 productionImage.forEach((elem) => {
 	elem.addEventListener("mouseout", function (e) {
-		e.target.setAttribute("src", "./img/burger.png");
+		e.target.setAttribute("src", "./../img/burger.png");
 	});
 });
 
